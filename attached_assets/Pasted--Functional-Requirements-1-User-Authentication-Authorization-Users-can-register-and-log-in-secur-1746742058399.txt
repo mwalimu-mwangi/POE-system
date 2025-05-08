@@ -1,0 +1,80 @@
+✅ Functional Requirements
+1. User Authentication & Authorization
+Users can register and log in securely.
+
+Different roles (Trainee, Assessor, Internal Verifier, External Verifier, Admin) have specific permissions.
+
+Passwords are hashed and managed securely.
+
+2. User Role Management (Admin)
+Admin can create, assign, and deactivate user accounts.
+
+Admin can assign assessors to specific trainees.
+
+Admin can configure assessment sessions and criteria.
+
+3. Evidence Submission (Trainee)
+Trainee can upload evidence files (PDF, image, video).
+
+Trainee can upload written exams as image files, which are converted to a single PDF.
+
+Each submission is tagged by unit, task, and submission date.
+
+Trainee can track the status (Pending, Reviewed, Resubmit, Approved).
+
+4. Assessment and Feedback (Assessor)
+Assessor views assigned trainee submissions.
+
+Assessor fills an assessment checklist for each task/unit.
+
+Assessor gives structured feedback and sets status (Approved, Resubmit, Rejected).
+
+Can attach annotated files or assessment comments.
+
+5. Verification (Internal and External Verifier)
+Internal verifier reviews assessor feedback for compliance.
+
+Can confirm, reject, or flag issues in assessment decisions.
+
+External verifier performs final validation for certification.
+
+6. Portfolio Compilation and Export
+System generates a full PoE document per trainee (evidence + feedback).
+
+Export PoE as a PDF for offline storage or submission to CDACC.
+
+Each exported PoE includes metadata (trainee ID, date, units, assessors).
+
+7. Notifications and Status Updates
+Email or in-app notifications are sent for:
+
+Submission received
+
+Assessment feedback available
+
+Resubmission request
+
+Final approval or rejection
+
+8. Audit Trail and Activity Logs
+System logs all major actions (submission, feedback, verification).
+
+Admin and verifiers can view action history per trainee.
+
+9. Reports and Analytics
+Admin can generate reports on:
+
+Trainee performance
+
+Assessor activity
+
+Assessment outcomes by unit/task
+
+Filters by date, course, level, status.
+
+10. File Management
+Supports upload of multiple file types: .pdf, .jpg, .png, .mp4, .docx.
+
+Converts image uploads to PDF (for written exams).
+
+Stores files locally or via a cloud provider (e.g., AWS S3).
